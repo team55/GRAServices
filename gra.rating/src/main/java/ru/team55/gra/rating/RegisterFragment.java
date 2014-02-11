@@ -9,12 +9,19 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 
-@EFragment(R.layout.fragment_main)
+@EFragment(R.layout.fragment_register)
 public class RegisterFragment extends Fragment {
 
 
-    //@ViewById EditText name;
-    //@ViewById EditText password;
+    @ViewById(R.id.editLogin)
+    EditText name;
+
+    @ViewById(R.id.editPassword)
+    EditText password;
+
+    @ViewById(R.id.editConfirmPassword)
+    EditText confirm_password;
+
 
   /*  @Click(R.id.log_in_button)
     void LogIn(){
@@ -22,16 +29,11 @@ public class RegisterFragment extends Fragment {
     }
 */
 
-
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-/*
-        ((main) activity).onSectionAttached(
-                getArguments().getInt(ARG_SECTION_NUMBER));
-*/
-        ((main) activity).onSectionAttached(2);
+
+        ((main) activity).onSectionAttached(2); //TODO: переделать
 
     }
 

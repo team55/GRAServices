@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <view class="android.support.v7.widget.Space"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"/>
+
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Авторизация пользователя"
+        app:typeface="roboto_condensed_light"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -21,11 +36,34 @@
         android:id="@+id/editPassword"
         android:layout_gravity="center_horizontal" />
 
-    <Button
+    <com.devspark.robototextview.widget.RobotoButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="22sp"
         android:text="Войти"
         android:id="@+id/buttonLogin"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        app:typeface="roboto_bold"/>
+
+    <view class="android.support.v7.widget.Space"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22sp"
+        android:text="Еще нет аккаунта?"
+        app:typeface="roboto_condensed_light"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Зарегистрироваться"
+        android:id="@+id/buttonGoRegister"
+        android:layout_gravity="center_horizontal"
+        app:typeface="roboto_bold"/>
 
 </LinearLayout>

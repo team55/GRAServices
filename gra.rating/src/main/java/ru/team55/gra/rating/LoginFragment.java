@@ -35,6 +35,12 @@ public class LoginFragment extends Fragment implements Validator.ValidationListe
     @ViewById(R.id.editPassword)
     EditText password;
 
+    @Click(R.id.buttonGoRegister)
+    void Register(){
+        ((main)getActivity()).onNavigationDrawerItemSelected(navigationPages.Register);
+    }
+
+
     @Click(R.id.buttonLogin)
     void LogIn(){
 
