@@ -35,7 +35,7 @@ dependencies {
 
     //блин но компилилась же на ноуте
     //https://github.com/gabrielemariotti/cardslib -- требует API 14 -
-    compile 'com.github.gabrielemariotti.cards:library:1.3.0'
+    //compile 'com.github.gabrielemariotti.cards:library:1.3.0'
 
 
     //https://github.com/inmite/android-validation-komensky
@@ -54,6 +54,10 @@ dependencies {
 
     //возможно подтяну
     compile 'com.mobsandgeeks:adapter-kit:0.5.3'
+
+    //Сообщалки
+    //https://github.com/johnkil/Android-AppMsg
+    compile 'com.github.johnkil.android-appmsg:appmsg:1.1.1'
 
 }
 

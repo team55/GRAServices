@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.devspark.appmsg.AppMsg;
 import com.mobsandgeeks.saripaar.Rule;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.Email;
@@ -71,7 +72,7 @@ public class LoginFragment extends Fragment implements Validator.ValidationListe
 
     @Override
     public void onValidationSucceeded() {
-        Toast.makeText(getActivity(), "Yay! we got it right!", Toast.LENGTH_SHORT).show();
+        AppMsg.makeText(getActivity(), "Попытка авторизации",  AppMsg.STYLE_CONFIRM).show();
     }
 
     @Override
